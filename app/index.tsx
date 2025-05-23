@@ -30,7 +30,6 @@ export default function App() {
         // Varmistetaan että ääni pysyy muistissa
         sound.setOnPlaybackStatusUpdate(status => {
           if (status.isLoaded && status.didJustFinish) {
-            // Voit tehdä jotain kun toisto päättyy
           }
         });
       } catch (error) {
